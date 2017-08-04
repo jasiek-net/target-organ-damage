@@ -1,7 +1,11 @@
+body {
+  min-width: 320px;
+}
+
 .input-row input {
-  width: 60%;
+  width: 50%;
 }
 
 .input-row label {
-  width: 40%;
+  width: 50%;
 }

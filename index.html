@@ -39,159 +39,155 @@
   </head>
   <body>
 
-
-<div style="max-width: 400px; margin: 0 auto;">
-  <header class="bar bar-nav">
-    <a href="#myModalexample" class="icon icon-info pull-right"></a>
-    <h1 class="title">Target Organ Damage</h1>
-  </header>
-  <div class="bar bar-standard bar-header-secondary">
-    <div class="segmented-control">
-      <a class="control-item active">Male</a>
-      <a class="control-item">Female</a>
-    </div>
-  </div>
-
-  <div class="bar bar-footer">
-    <a class="icon icon-compose pull-right" href="#composeModal"></a>
-    <small class="updated-text">Updated just now</small>
-  </div>
-
-  <div class="content"><!-- content -->
-
-    <div class="table-view">
-      <form class="input-group">
-        <div class="table-view-divider">Basic Info</div>
-        <div class="input-row">
-          <input id="age" type="number">
-          <label>Age (years)</label>
-        </div>
-        <div class="input-row">
-          <input id="height" type="number">
-          <label>Height (cm)</label>
-        </div>
-        <div class="input-row">
-          <input id="weight" type="number">
-          <label>Weight (kg)</label>
-        </div>
-
-        <div class="table-view-divider">Ventricular Dimensions</div>
-        <div class="input-row">
-          <input id="ivsd" type="number">
-          <label for="ivsd">IVSd (cm)</label>
-        </div>
-        <div class="input-row">
-          <input id="lvidd" type="number">
-          <label for="lvidd">LVIDd (cm)</label>
-        </div>
-        <div class="input-row">
-          <input id="lvpwd" type="number">
-          <label for="lvpwd">LVPWd (cm)</label>
-        </div>
-
-        <div class="table-view-divider">Hypertension</div>
-        <div class="input-row">
-          <input id="lccaimt" type="number">
-          <label for="lccaimt">LCCAIMT (mm)</label>
-        </div>
-        <div class="input-row">
-          <input id="rccaimt" type="number">
-          <label for="rccaimt">RCCAIMT (mm)</label>
-        </div>
-        <div class="input-row">
-          <input id="ldd" type="number">
-          <label for="ldd">LdD (mm)</label>
-        </div>
-        <div class="input-row">
-          <input id="rdd" type="number">
-          <label for="rdd">RdD (mm)</label>
-        </div>
-
-        <div class="table-view-divider">Other</div>
-        <div class="input-row">
-          <input id="aobp" type="number">
-          <label for="aobp">AoBP (mmHg)</label>
-        </div>
-        <div class="input-row">
-          <input id="pwv" type="number">
-          <label for="pwv">PWV (m/s)</label>
-        </div>
-
-      </form>
-    </div>
-  </div><!-- /content -->
-
-  <div id="myModalexample" class="modal">
     <header class="bar bar-nav">
-      <a class="icon icon-close pull-right" href="#myModalexample"></a>
-      <h1 class="title">Modal</h1>
+      <a href="#myModalexample" class="icon icon-info pull-right"></a>
+      <h1 class="title">Target Organ Damage</h1>
     </header>
-
-    <div class="content">
-      <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-    </div>
-  </div>
-
-  <!-- Compose modal -->
-  <div id="composeModal" class="modal">
-    <header class="bar bar-nav">
-      <a class="btn btn-link pull-right" href="#composeModal">
-        <strong>Send</strong>
-      </a>
-      <a class="btn btn-link pull-left" href="/">
-        Cancel
-      </a>
-      <h1 class="title">New message</h1>
-    </header>
-
-    <div class="content">
-      <form class="input-group">
-        <input type="text" placeholder="To:">
-        <input type="email" placeholder="From:">
-        <input type="text" placeholder="Subject:">
-        <textarea rows="20"></textarea>
-      </form>
-    </div>
-  </div><!-- /.modal -->
-</div>
-
-
-      <div class="col s12 m6 offset-m3">
-        <table class="striped">
-          <tbody>
-            <tr>
-              <td>cIMT</td>
-              <td id="cimt">no data</td>
-            </tr>
-            <tr>
-              <td>mWCSA</td>
-              <td id="mwcsa">no data</td>
-            </tr>
-            <tr>
-              <td>RWT</td>
-              <td id="rwt">no data</td>
-            </tr>
-            <tr>
-              <td>LVMiS</td>
-              <td id="lvmis">no data</td>
-            </tr>
-            <tr>
-              <td>LVMIS pc</td>
-              <td id="lvmispc">no data</td>
-            </tr>
-            <tr>
-              <td>AoBP</td>
-              <td id="aobp-value">no data</td>
-            </tr>
-            <tr>
-              <td>PWV</td>
-              <td id="pwv-value">no data</td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="bar bar-standard bar-header-secondary">
+      <div class="segmented-control">
+        <a class="control-item active">Male</a>
+        <a class="control-item">Female</a>
       </div>
     </div>
+
+    <div class="bar bar-footer">
+      <a class="icon icon-compose pull-right" href="#composeModal"></a>
+      <small class="updated-text">Updated just now</small>
+    </div>
+
+    <div class="content"><!-- content -->
+
+      <div class="table-view">
+        <form class="input-group">
+          <div class="table-view-divider">Basic Info</div>
+          <div class="input-row">
+            <input id="age" type="number">
+            <label>Age (years)</label>
+          </div>
+          <div class="input-row">
+            <input id="height" type="number">
+            <label>Height (cm)</label>
+          </div>
+          <div class="input-row">
+            <input id="weight" type="number">
+            <label>Weight (kg)</label>
+          </div>
+
+          <div class="table-view-divider">Ventricular Dimensions</div>
+          <div class="input-row">
+            <input id="ivsd" type="number">
+            <label for="ivsd">IVSd (cm)</label>
+          </div>
+          <div class="input-row">
+            <input id="lvidd" type="number">
+            <label for="lvidd">LVIDd (cm)</label>
+          </div>
+          <div class="input-row">
+            <input id="lvpwd" type="number">
+            <label for="lvpwd">LVPWd (cm)</label>
+          </div>
+
+          <div class="table-view-divider">Hypertension</div>
+          <div class="input-row">
+            <input id="lccaimt" type="number">
+            <label for="lccaimt">LCCAIMT (mm)</label>
+          </div>
+          <div class="input-row">
+            <input id="rccaimt" type="number">
+            <label for="rccaimt">RCCAIMT (mm)</label>
+          </div>
+          <div class="input-row">
+            <input id="ldd" type="number">
+            <label for="ldd">LdD (mm)</label>
+          </div>
+          <div class="input-row">
+            <input id="rdd" type="number">
+            <label for="rdd">RdD (mm)</label>
+          </div>
+
+          <div class="table-view-divider">Other</div>
+          <div class="input-row">
+            <input id="aobp" type="number">
+            <label for="aobp">AoBP (mmHg)</label>
+          </div>
+          <div class="input-row">
+            <input id="pwv" type="number">
+            <label for="pwv">PWV (m/s)</label>
+          </div>
+
+        </form>
+      </div>
+    </div><!-- /content -->
+
+    <div id="myModalexample" class="modal">
+      <header class="bar bar-nav">
+        <a class="icon icon-close pull-right" href="#myModalexample"></a>
+        <h1 class="title">Modal</h1>
+      </header>
+
+      <div class="content">
+        <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+      </div>
+    </div>
+
+    <!-- Compose modal -->
+    <div id="composeModal" class="modal">
+      <header class="bar bar-nav">
+        <a class="btn btn-link pull-right" href="#composeModal">
+          <strong>Send</strong>
+        </a>
+        <a class="btn btn-link pull-left" href="/">
+          Cancel
+        </a>
+        <h1 class="title">New message</h1>
+      </header>
+
+      <div class="content">
+        <form class="input-group">
+          <input type="text" placeholder="To:">
+          <input type="email" placeholder="From:">
+          <input type="text" placeholder="Subject:">
+          <textarea rows="20"></textarea>
+        </form>
+      </div>
+    </div><!-- /.modal -->
   </div>
+
+
+    <div class="col s12 m6 offset-m3">
+      <table class="striped">
+        <tbody>
+          <tr>
+            <td>cIMT</td>
+            <td id="cimt">no data</td>
+          </tr>
+          <tr>
+            <td>mWCSA</td>
+            <td id="mwcsa">no data</td>
+          </tr>
+          <tr>
+            <td>RWT</td>
+            <td id="rwt">no data</td>
+          </tr>
+          <tr>
+            <td>LVMiS</td>
+            <td id="lvmis">no data</td>
+          </tr>
+          <tr>
+            <td>LVMIS pc</td>
+            <td id="lvmispc">no data</td>
+          </tr>
+          <tr>
+            <td>AoBP</td>
+            <td id="aobp-value">no data</td>
+          </tr>
+          <tr>
+            <td>PWV</td>
+            <td id="pwv-value">no data</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="fingerblast.min.js"></script>
