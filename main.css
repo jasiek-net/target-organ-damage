@@ -9,3 +9,7 @@ body {
 .input-row label {
   width: 50%;
 }
+
+.table-view-cell {
+  padding: 7px 65px 6px 15px;
+}

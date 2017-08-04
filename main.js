@@ -2,7 +2,7 @@ new FingerBlast('body');
 
 function is(n) { return !isNaN(n); };
 
-$('input, select').change(function(event) {
+$('input').change(function(event) {
   const nodata = 'no data';
 
   const sex = parseFloat($('#sex').val());
