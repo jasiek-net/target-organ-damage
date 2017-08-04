@@ -32,7 +32,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet-theme-ios.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/js/ratchet.min.js"></script>
 
     <title>Target Organ Damage</title>
@@ -57,23 +57,69 @@
     <small class="updated-text">Updated just now</small>
   </div>
 
-  <div class="content">
+  <div class="content"><!-- content -->
 
     <div class="table-view">
-      <div class="table-view-divider">Basic Info</div>
       <form class="input-group">
+        <div class="table-view-divider">Basic Info</div>
         <div class="input-row">
           <input id="age" type="number">
-          <label>Age (in years)</label>
+          <label>Age (years)</label>
         </div>
         <div class="input-row">
           <input id="height" type="number">
           <label>Height (cm)</label>
         </div>
+        <div class="input-row">
+          <input id="weight" type="number">
+          <label>Weight (kg)</label>
+        </div>
+
+        <div class="table-view-divider">Ventricular Dimensions</div>
+        <div class="input-row">
+          <input id="ivsd" type="number">
+          <label for="ivsd">IVSd (cm)</label>
+        </div>
+        <div class="input-row">
+          <input id="lvidd" type="number">
+          <label for="lvidd">LVIDd (cm)</label>
+        </div>
+        <div class="input-row">
+          <input id="lvpwd" type="number">
+          <label for="lvpwd">LVPWd (cm)</label>
+        </div>
+
+        <div class="table-view-divider">Hypertension</div>
+        <div class="input-row">
+          <input id="lccaimt" type="number">
+          <label for="lccaimt">LCCAIMT (mm)</label>
+        </div>
+        <div class="input-row">
+          <input id="rccaimt" type="number">
+          <label for="rccaimt">RCCAIMT (mm)</label>
+        </div>
+        <div class="input-row">
+          <input id="ldd" type="number">
+          <label for="ldd">LdD (mm)</label>
+        </div>
+        <div class="input-row">
+          <input id="rdd" type="number">
+          <label for="rdd">RdD (mm)</label>
+        </div>
+
+        <div class="table-view-divider">Other</div>
+        <div class="input-row">
+          <input id="aobp" type="number">
+          <label for="aobp">AoBP (mmHg)</label>
+        </div>
+        <div class="input-row">
+          <input id="pwv" type="number">
+          <label for="pwv">PWV (m/s)</label>
+        </div>
+
       </form>
     </div>
-
-  </div>
+  </div><!-- /content -->
 
   <div id="myModalexample" class="modal">
     <header class="bar bar-nav">
@@ -109,85 +155,6 @@
   </div><!-- /.modal -->
 </div>
 
-
-
-
-  <div class="container">
-    <h5>TOD</h5>
-
-    <div class="row">
-      <div class="col s12 m6 offset-m3">
-        <div class="row">
-          <div class="input-field col s6">
-            <select id="sex">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-            <label>Sex</label>
-          </div>
-
-          <div class="input-field col s6">
-            <input id="age" type="number">
-            <label for="age">Age (years)</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="height" type="number">
-            <label for="height">Height (cm)</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="ivsd" type="number">
-            <label for="ivsd">IVSd (cm)</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="lvidd" type="number">
-            <label for="lvidd">LVIDd (cm)</label>
-          </div>
-           <div class="input-field col s6">
-            <input id="lvpwd" type="number">
-            <label for="lvpwd">LVPWd (cm)</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="aobp" type="number">
-            <label for="aobp">AoBP (mmHg)</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="pwv" type="number">
-            <label for="pwv">PWV (m/s)</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="lccaimt" type="number">
-            <label for="lccaimt">LCCAIMT (mm)</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="rccaimt" type="number">
-            <label for="rccaimt">RCCAIMT (mm)</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="ldd" type="number">
-            <label for="ldd">LdD (mm)</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="rdd" type="number">
-            <label for="rdd">RdD (mm)</label>
-          </div>
-        </div>
-
-      </div>
 
       <div class="col s12 m6 offset-m3">
         <table class="striped">
