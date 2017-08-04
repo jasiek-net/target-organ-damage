@@ -1,3 +1,5 @@
+new FingerBlast('body');
+
 function is(n) { return !isNaN(n); };
 
 $('input, select').change(function(event) {

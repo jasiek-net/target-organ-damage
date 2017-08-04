@@ -31,17 +31,86 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <style type="text/css">
-      .row {
-        margin-bottom: 0 !important;
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet-theme-ios.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/js/ratchet.min.js"></script>
 
+    <title>Target Organ Damage</title>
   </head>
   <body>
+
+
+<div style="max-width: 400px; margin: 0 auto;">
+  <header class="bar bar-nav">
+    <a href="#myModalexample" class="icon icon-info pull-right"></a>
+    <h1 class="title">Target Organ Damage</h1>
+  </header>
+  <div class="bar bar-standard bar-header-secondary">
+    <div class="segmented-control">
+      <a class="control-item active">Male</a>
+      <a class="control-item">Female</a>
+    </div>
+  </div>
+
+  <div class="bar bar-footer">
+    <a class="icon icon-compose pull-right" href="#composeModal"></a>
+    <small class="updated-text">Updated just now</small>
+  </div>
+
+  <div class="content">
+
+    <div class="table-view">
+      <div class="table-view-divider">Basic Info</div>
+      <form class="input-group">
+        <div class="input-row">
+          <input id="age" type="number">
+          <label>Age (in years)</label>
+        </div>
+        <div class="input-row">
+          <input id="height" type="number">
+          <label>Height (cm)</label>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div id="myModalexample" class="modal">
+    <header class="bar bar-nav">
+      <a class="icon icon-close pull-right" href="#myModalexample"></a>
+      <h1 class="title">Modal</h1>
+    </header>
+
+    <div class="content">
+      <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+    </div>
+  </div>
+
+  <!-- Compose modal -->
+  <div id="composeModal" class="modal">
+    <header class="bar bar-nav">
+      <a class="btn btn-link pull-right" href="#composeModal">
+        <strong>Send</strong>
+      </a>
+      <a class="btn btn-link pull-left" href="/">
+        Cancel
+      </a>
+      <h1 class="title">New message</h1>
+    </header>
+
+    <div class="content">
+      <form class="input-group">
+        <input type="text" placeholder="To:">
+        <input type="email" placeholder="From:">
+        <input type="text" placeholder="Subject:">
+        <textarea rows="20"></textarea>
+      </form>
+    </div>
+  </div><!-- /.modal -->
+</div>
+
+
+
 
   <div class="container">
     <h5>TOD</h5>
@@ -158,12 +227,7 @@
   </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('select').material_select();
-    });
-  </script>
+  <script type="text/javascript" src="fingerblast.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
