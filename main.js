@@ -2,10 +2,13 @@ new FingerBlast('body');
 
 function is(n) { return !isNaN(n); };
 
-$('input').change(function(event) {
+$('input').change(recalculate);
+$('.control-item').click(recalculate);
+
+function recalculate(event) {
   const nodata = 'no data';
 
-  const sex = parseFloat($('#sex').val());
+  const sex = $('.control-item.active')[0].id;
   const age = parseFloat($('#age').val());
   const height = parseFloat($('#height').val());
   const rccaimt = parseFloat($('#rccaimt').val());
@@ -19,7 +22,7 @@ $('input').change(function(event) {
   const pwv = parseFloat($('#pwv').val());
 
   if (is(age) && is(rccaimt) && is(lccaimt)) {
-    const cimt = ((rccaimt + lccaimt) / 2).toFixed(2);
+    const cimt = (rccaimt + lccaimt) / 2;
     $('#cimt').html(cimt_aobp_ms[cIMT(sex, age, cimt)]);
   } else $('#cimt').html(nodata);
 
@@ -50,12 +53,12 @@ $('input').change(function(event) {
     $('#lvmispc').html(nodata);
   }
 
-  if (is(age) && is(aobp)) $('#aobp-value').html(cimt_aobp_ms[AoBP(sex, age, aobp.toFixed(2))]);
+  if (is(age) && is(aobp)) $('#aobp-value').html(cimt_aobp_ms[AoBP(sex, age, aobp)]);
   else                     $('#aobp-value').html(nodata);
 
   if (is(age) && is(pwv)) $('#pwv-value').html(pwv_ms[PWV(sex, age, pwv)]);
   else                    $('#pwv-value').html(nodata);
-});
+}
 
 function cIMT(sex, age, cimt) {
   if (sex === 'male') {
@@ -118,7 +121,7 @@ function cIMT(sex, age, cimt) {
 };
 
 function AoBP(sex, age, aobp) {
-  if (sex === "male") {
+  if (sex === 'male') {
     if (age < 8)       return 0;
     if (age < 9) {
       if (aobp < 98)   return 1;
@@ -239,7 +242,7 @@ function AoBP(sex, age, aobp) {
 }
 
 function PWV(sex, age, pwv) {
-  if ((sex === "male")) {
+  if ((sex === 'male')) {
     if (age < 7)          return 0;
     if (age < 8) {
       if (pwv < 4.82)   return 1;
