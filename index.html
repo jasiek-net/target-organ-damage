@@ -30,7 +30,140 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+      .row {
+        margin-bottom: 0 !important;
+      }
+    </style>
+
   </head>
   <body>
+
+  <div class="container">
+    <h5>TOD</h5>
+
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <div class="row">
+          <div class="input-field col s6">
+            <select id="sex">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <label>Sex</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="age" type="number">
+            <label for="age">Age (years)</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="height" type="number">
+            <label for="height">Height (cm)</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="ivsd" type="number">
+            <label for="ivsd">IVSd (cm)</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="lvidd" type="number">
+            <label for="lvidd">LVIDd (cm)</label>
+          </div>
+           <div class="input-field col s6">
+            <input id="lvpwd" type="number">
+            <label for="lvpwd">LVPWd (cm)</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="aobp" type="number">
+            <label for="aobp">AoBP (mmHg)</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="pwv" type="number">
+            <label for="pwv">PWV (m/s)</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="lccaimt" type="number">
+            <label for="lccaimt">LCCAIMT (mm)</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="rccaimt" type="number">
+            <label for="rccaimt">RCCAIMT (mm)</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="ldd" type="number">
+            <label for="ldd">LdD (mm)</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="rdd" type="number">
+            <label for="rdd">RdD (mm)</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col s12 m6 offset-m3">
+        <table class="striped">
+          <tbody>
+            <tr>
+              <td>cIMT</td>
+              <td id="cimt">no data</td>
+            </tr>
+            <tr>
+              <td>mWCSA</td>
+              <td id="mwcsa">no data</td>
+            </tr>
+            <tr>
+              <td>RWT</td>
+              <td id="rwt">no data</td>
+            </tr>
+            <tr>
+              <td>LVMiS</td>
+              <td id="lvmis">no data</td>
+            </tr>
+            <tr>
+              <td>LVMIS pc</td>
+              <td id="lvmispc">no data</td>
+            </tr>
+            <tr>
+              <td>AoBP</td>
+              <td id="aobp-value">no data</td>
+            </tr>
+            <tr>
+              <td>PWV</td>
+              <td id="pwv-value">no data</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('select').material_select();
+    });
+  </script>
+  <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
