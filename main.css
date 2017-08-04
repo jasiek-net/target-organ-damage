@@ -13,3 +13,12 @@ body {
 .table-view-cell {
   padding: 7px 65px 6px 15px;
 }
+
+li {
+  font-size: 14px;
+  color: #777;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
